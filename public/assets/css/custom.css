@@ -1,0 +1,138 @@
+#loadingMessage, #noDataMessage {
+  text-align: center;
+}
+#btnCorreo {
+  display: none!important;
+}
+.bg-danger {
+  margin-bottom: 8px!important;
+}
+.botones {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; /* Para que los botones se ajusten a diferentes tamaños de pantalla */
+}
+a.btn.btn-outline-danger.w-100 {
+  margin-left: -10px!important;
+}
+
+a.btn.btn-outline-success.w-100 {
+  margin-left: 10px!important;
+}
+
+a.btn.btn-outline-info.w-100 {
+  margin-left: 20px!important;
+}
+.botones a {
+  display: inline-block;
+  margin: 5px; /* Espacio entre botones */
+  padding: 8px 16px; /* Tamaño de padding para dispositivos móviles */
+  border-radius: 5px;
+  color: #000000; /* Color de texto */
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  border: solid 1px #000000;
+}
+
+/* Cambiar color de fondo al pasar el mouse */
+.botones a:hover {
+  background-color: #007bff; /* Color de fondo al pasar el ratón */
+}
+
+
+/* Media query para dispositivos móviles */
+@media only screen and (max-width: 600px) {
+  .botones a {
+      padding: 6px 12px; /* Reducir padding para dispositivos móviles */
+      font-size: 12px; /* Reducir tamaño de fuente para dispositivos móviles */
+  }
+}
+
+
+
+a.btn.btn-info {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  
+.dt-buttons button{
+    background-color: white !important;
+    border: none !important;
+}
+.datclient {
+    font-size: 14px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    list-style-type: none;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-right: 0px;
+    margin-left: 0px; 
+  }
+  .card.mx-2.my-2 {
+    width: 437px!important;
+  }
+  
+      .card {
+        
+          border: 1px solid #ddd; /* Borde de la tarjeta */
+          border-radius: 8px; /* Bordes redondeados */
+          margin-bottom: 20px; /* Margen inferior entre tarjetas */
+      }
+  
+      .card-title {
+          font-size: 0.80rem; /* Tamaño del título */
+          margin-bottom: 0.5rem; /* Margen inferior del título */
+      }
+  
+      .card-text {
+          font-size: 1rem; /* Tamaño del texto */
+          margin-bottom: 0.25rem; /* Margen inferior del texto */
+      }
+  
+      .btn-primary {
+          font-size: 0.9rem; /* Tamaño del botón */
+      }
+      .loading , .no-data {
+        position: relative!important;
+              text-align: center!important;
+              height: 100px!important; 
+              line-height: 100px!important; /* Alinea verticalmente el contenido */
+        margin-top: 20%!important;
+        z-index: -!important;
+      }
+      h5.nprestamo {
+        text-align: right
+        
+      }
+      img.img-fluid.rounded-end {
+        width: 117px !important;
+        border-radius: 100%!important;
+      }
+      div.imgperfil.col-md-12 {
+        text-align: center!important
+        
+      } 
+      a.btn.btn-outline-info.me-2 {
+        margin-top: 5px;
+        margin-bottom: 5px;
+      }
+      
+      a.btn.btn-outline-secondary {
+       margin-top: 5px;
+        margin-bottom: 5px; 
+      }
+      
+      a.btn.btn-outline-success.me-2 {
+        margin-top: 5px;
+        margin-bottom: 5px;
+      }
+      
+      a.btn.btn-outline-danger.me-2 {
+        margin-top: 5px;
+        margin-bottom: 5px;
+      }
+      

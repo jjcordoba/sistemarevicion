@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<phpunit bootstrap="system/Test/bootstrap.php"
+         colors="true"
+         stopOnFailure="false"
+         stopOnError="false">
+    
+    <testsuites>
+        <testsuite name="Application Test Suite">
+            <directory suffix="Test.php">./tests</directory>
+        </testsuite>
+    </testsuites>
+
+    <php>
+        <env name="CI_ENVIRONMENT" value="testing"/>
+    </php>
+
+</phpunit>

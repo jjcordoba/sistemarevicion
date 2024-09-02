@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="" tests="2" assertions="0" errors="2" warnings="0" failures="0" skipped="0" time="0.031383">
+    <testsuite name="App" tests="2" assertions="0" errors="2" warnings="0" failures="0" skipped="0" time="0.031383">
+      <testsuite name="Tests\Feature\AuthTest" file="C:\laragon\www\cobranzas-prestamos1\tests\Feature\uthTest.php" tests="2" assertions="0" errors="2" warnings="0" failures="0" skipped="0" time="0.031383">
+        <testcase name="testLoginRouteExists" class="Tests\Feature\AuthTest" classname="Tests.Feature.AuthTest" file="C:\laragon\www\cobranzas-prestamos1\tests\Feature\uthTest.php" line="9" assertions="0" time="0.028974">
+          <error type="CodeIgniter\Database\Exceptions\DatabaseException">Tests\Feature\AuthTest::testLoginRouteExists
+CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.&#13;
+Main connection [SQLite3]: Class "SQLite3" not found
+
+C:\laragon\www\cobranzas-prestamos1\system\Database\BaseConnection.php:427
+C:\laragon\www\cobranzas-prestamos1\system\Database\SQLite3\Connection.php:59
+C:\laragon\www\cobranzas-prestamos1\system\Test\DatabaseTestTrait.php:74
+C:\laragon\www\cobranzas-prestamos1\system\Test\DatabaseTestTrait.php:54
+C:\laragon\www\cobranzas-prestamos1\system\Test\CIUnitTestCase.php:248</error>
+        </testcase>
+        <testcase name="testAuthPostRouteExists" class="Tests\Feature\AuthTest" classname="Tests.Feature.AuthTest" file="C:\laragon\www\cobranzas-prestamos1\tests\Feature\uthTest.php" line="15" assertions="0" time="0.002410">
+          <error type="CodeIgniter\Database\Exceptions\DatabaseException">Tests\Feature\AuthTest::testAuthPostRouteExists
+CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.&#13;
+Main connection [SQLite3]: Class "SQLite3" not found
+
+C:\laragon\www\cobranzas-prestamos1\system\Database\BaseConnection.php:427
+C:\laragon\www\cobranzas-prestamos1\system\Database\SQLite3\Connection.php:59
+C:\laragon\www\cobranzas-prestamos1\system\Test\DatabaseTestTrait.php:74
+C:\laragon\www\cobranzas-prestamos1\system\Test\DatabaseTestTrait.php:54
+C:\laragon\www\cobranzas-prestamos1\system\Test\CIUnitTestCase.php:248</error>
+        </testcase>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testsuites>

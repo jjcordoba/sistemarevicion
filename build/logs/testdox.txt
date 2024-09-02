@@ -1,0 +1,4 @@
+Auth (Tests\Feature\Auth)
+ [ ] Login route exists
+ [ ] Auth post route exists
+

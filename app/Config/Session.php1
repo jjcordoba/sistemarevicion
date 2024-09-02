@@ -1,0 +1,16 @@
+<?php
+
+namespace Config;
+
+use CodeIgniter\Config\BaseConfig;
+
+class Session extends BaseConfig
+{
+    public $driver = 'CodeIgniter\Session\Handlers\DatabaseHandler';  // Controlador de sesiones: utiliza la base de datos.
+    public $cookieName = 'ci_session';  // Nombre de la cookie de sesión.
+    public $expiration = 7200;  // Duración de la sesión en segundos (2 horas).
+    public $savePath = 'ci_sessions';  // Tabla de la base de datos para almacenar sesiones.
+    public $matchIP = false;  // No se valida la IP del usuario para la sesión.
+    public $timeToUpdate = 300;  // Tiempo en segundos para regenerar la ID de la sesión.
+    public $regenerateDestroy = false;  // No destruir los datos de sesión antiguos al regenerar la ID.
+}

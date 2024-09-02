@@ -77,7 +77,7 @@ class Auth extends BaseController
                     if (password_verify($clave, $datosUser['clave'])) {
                         log_message('info', 'Password verified successfully.');
 
-                        $roles = $this->roles->find($datosUser['id_rol']);
+                        $roles = $this->roles->find(1); //$datosUser['id_rol']
 
                         if ($roles) {
                             log_message('info', 'Role found for user.');
@@ -97,11 +97,12 @@ class Auth extends BaseController
                             log_message('info', 'Auth token added to response headers.');
 
                             $redirect_url = base_url('admin/home');
+
                             $response_data = [
                                 'logged_in' => true,
                                 'status' => 'success',
                                 'message' => 'Autenticación exitosa.',
-                                'data' => [
+                                /* 'data' => [
                                     'id_usuario' => $datosUser['id'],
                                     'correo' => $datosUser['correo'],
                                     'nombre' => $datosUser['nombre'],
@@ -110,17 +111,25 @@ class Auth extends BaseController
                                     'es_superadmin' => $es_superadmin,
                                     'id_empresa' => $datosUser['id_empresa'],
                                     'token' => $token,
-                                ],
+                                ], */
                                 'redirect_url' => $redirect_url
                             ];
+                            
                             log_message('info', 'Login successful. Response data: ' . json_encode($response_data));
 
                             if ($this->request->isAJAX() || $this->isApiRequest()) {
                                 return $this->respond($response_data);
                             }
 
+                            session()->set($response_data);
+
+                            //return json_encode(session()->get());
+
                             // Redirige al dashboard si no es una solicitud AJAX
-                            return redirect()->to($redirect_url);
+                            //return redirect()->to($redirect_url);
+
+                            return redirect()->to('admin/home');
+
                         } else {
                             log_message('error', 'Role not found for user.');
                             return redirect()->to(base_url('cedeincorrecta'));

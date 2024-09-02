@@ -65,8 +65,8 @@ abstract class BaseController extends Controller
         $this->data['empresa_id'] = $empresaId;
 
         // Obtén los datos de la empresa actual
-        $empresaModel = new \App\Models\EmpresaModel();
-        $this->data['empresa_actual'] = $empresaModel->find($empresaId);
+        //$empresaModel = new \App\Models\EmpresaModel();
+        $this->data['empresa_actual'] = 1;//$empresaModel->find($empresaId);
 
         $this->currentCompany = $this->getCurrentCompany();
     }

@@ -24,6 +24,7 @@ $routes->get('logout', 'Auth::logout');
 
 $routes->get('permisos', 'Home::permisos');
 $routes->post('usuarios/validar', 'Usuarios::verificar');
+
 $routes->group('', ['filter' => 'AuthCheck'], function ($routes) {
 	$routes->get('usuarios', 'Usuarios::index');
 	$routes->get('usuarios/nuevo', 'Usuarios::nuevo');

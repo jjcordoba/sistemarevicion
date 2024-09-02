@@ -20,9 +20,9 @@ class Admin extends BaseController
         helper(['form', 'function']);
         $this->admin = new AdminModel();
         $this->usuarios = new UsuariosModel();
-        $this->clientes = new ClientesModel();
-        $this->prestamos = new PrestamosModel();
-        $this->detalle = new DetallePrestamosModel();
+        //$this->clientes = new ClientesModel();
+        //$this->prestamos = new PrestamosModel();
+        //$this->detalle = new DetallePrestamosModel();
         $this->session = session();
 
         log_message('debug', 'Session data: ' . json_encode($this->session->get()));
